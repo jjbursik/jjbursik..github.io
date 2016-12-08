@@ -10,14 +10,14 @@ url: "http://127.0.0.1:4000"
 
 # author
 author:
-  name: 'Jeff Bursik'
-  first_name: 'Jeff'
-  last_name: 'Bursik'
+  name: ''
+  first_name: ''
+  last_name: 'Jeff Bursik'
   email: 'jjbursik@hotmail.com'
   facebook_username: 'jeff.bursik'
   github_username: 'jjbursik'
   head_img: 'static/img/landing/Jeff.jpg'
-  desc: ''
+  desc: 'Create new, improve old, continue to learn, welcome to my Blog!'
 
 # sections
 sections:

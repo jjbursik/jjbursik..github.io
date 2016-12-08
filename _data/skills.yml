@@ -1,20 +1,14 @@
-- name: Python
-  percentage: 85
+- name: Elasticsearch
+  percentage: 50
 
-- name: HTML/CSS
-  percentage: 65
+- name: Java
+  percentage: 40
+
+- name: Javascript
+  percentage: 30
 
 - name: Linux/Shell
+  percentage: 40
+
+- name: Data Management
   percentage: 75
-
-- name: jQuery
-  percentage: 85
-
-- name: AngularJS
-  percentage: 80
-
-- name: Ionic
-  percentage: 70
-
-- name: Vuejs
-  percentage: 65
