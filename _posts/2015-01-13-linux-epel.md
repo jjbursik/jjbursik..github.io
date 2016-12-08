@@ -33,9 +33,9 @@ Here are the steps to create the site (I used a Mac so command lines may differ 
 7. Check in all the code and GitHub will host the site for you.
 
 It's that simple.  Now have fun and customize to your needs.  Some tips:
-M
-* Blogs are stored in the `_posts` directory.
-* Site html code (which really doesn't need to be touched unless you want to change it) is in the `_site` directory.
-* All main page documentation is the `_config.yml` file
-* If your main pages aren't taking place, I had to modify the html because it was pointing to a JSON file.  This was in the `_site/blog/index.html` file.
-* To run and refresh your build locally, run `jekyll serve --watch`
+
+1. Blogs are stored in the `_posts` directory.
+2. Site html code (which really doesn't need to be touched unless you want to change it) is in the `_site` directory.
+3. All main page documentation is the `_config.yml` file
+4. If your main pages aren't taking place, I had to modify the html because it was pointing to a JSON file.  This was in the `_site/blog/index.html` file.
+5. To run and refresh your build locally, run `jekyll serve --watch`
