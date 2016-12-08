@@ -33,6 +33,7 @@ Here are the steps to create the site (I used a Mac so command lines may differ 
 7. Check in all the code and GitHub will host the site for you.
 
 It's that simple.  Now have fun and customize to your needs.  Some tips:
+M
 * Blogs are stored in the `_posts` directory.
 * Site html code (which really doesn't need to be touched unless you want to change it) is in the `_site` directory.
 * All main page documentation is the `_config.yml` file
