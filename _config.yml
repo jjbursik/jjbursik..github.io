@@ -5,7 +5,6 @@ title: "Jeff Bursik"
 description: "Jeff's Blog and Site"
 keywords: "Jeff,Bursik,blog,github"
 baseurl: "/"
-# url: "http://www.jack003.com"
 url: "http://127.0.0.1:4000"
 
 # author
