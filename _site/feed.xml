@@ -5,9 +5,47 @@
     <description>Jeff's Blog and Site</description>
     <link>http://localhost:4000//</link>
     <atom:link href="http://localhost:4000//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 08 Dec 2016 07:01:36 -0600</pubDate>
-    <lastBuildDate>Thu, 08 Dec 2016 07:01:36 -0600</lastBuildDate>
+    <pubDate>Thu, 08 Dec 2016 18:44:18 -0600</pubDate>
+    <lastBuildDate>Thu, 08 Dec 2016 18:44:18 -0600</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
+    
+      <item>
+        <title>Jenkins Coded and Tested</title>
+        <description>&lt;p&gt;Jenkins, while great, has its limitations if you don’t build it correctly.  Several teams, products, etc. use Jenkins for a CI/CD tool and set up jobs through the Web Interface however then there is extra work to back up the jobs, save it somewhere, etc.  And, how do they ensure a job is set and not later changed over the course of time?  Well, it’s simple… you use the Jenkins DSL.&lt;/p&gt;
+
+&lt;p&gt;Jenkins DSL is domain specific language and is basically a coded Jenkins job interface.  You still install Jenkins as usual however all jobs are saved into a code repository, pretty awesome huh?  My team introduced this to me and it’s pretty slick.  However the problem for me, I like to test and develop locally which means I need a Jenkins instance running on the Mac that then reads from my Git Repository and builds all my necessary jobs.&lt;/p&gt;
+
+&lt;p&gt;Alright, here is how it’s done, on a Mac:&lt;/p&gt;
+
+&lt;p&gt;Keep in mind, this worked for me however there were some struggles along the way.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Download Jenkins: https://jenkins.io/content/thank-you-downloading-os-x-installer/&lt;/li&gt;
+  &lt;li&gt;Jenkins will download under a new username ‘Jenkins’ (this took me a little while to figure out)
+3.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Tips:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;To stop Jenkins &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo launchctl unload /Library/LaunchDaemons/org.jenkins-ci.plist&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;To start Jenkins &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo launchctl load /Library/LaunchDaemons/org.jenkins-ci.plist&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        <pubDate>Thu, 08 Dec 2016 00:00:00 -0600</pubDate>
+        <link>http://localhost:4000//code/2016/12/08/Jenkins-DSL-Mac-Setup.html</link>
+        <guid isPermaLink="true">http://localhost:4000//code/2016/12/08/Jenkins-DSL-Mac-Setup.html</guid>
+        
+        <category>FirstBlog</category>
+        
+        <category>HowToBlog</category>
+        
+        <category>jekyll</category>
+        
+        
+        <category>Code</category>
+        
+      </item>
     
       <item>
         <title>How I started...</title>
@@ -39,19 +77,19 @@
   &lt;li&gt;Check in all the code and GitHub will host the site for you.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;It’s that simple.  Now have fun and customize to your needs.  Some tips:
-M&lt;/p&gt;
-&lt;ul&gt;
+&lt;p&gt;It’s that simple.  Now have fun and customize to your needs.  Some tips:&lt;/p&gt;
+
+&lt;ol&gt;
   &lt;li&gt;Blogs are stored in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory.&lt;/li&gt;
   &lt;li&gt;Site html code (which really doesn’t need to be touched unless you want to change it) is in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_site&lt;/code&gt; directory.&lt;/li&gt;
   &lt;li&gt;All main page documentation is the &lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt; file&lt;/li&gt;
   &lt;li&gt;If your main pages aren’t taking place, I had to modify the html because it was pointing to a JSON file.  This was in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_site/blog/index.html&lt;/code&gt; file.&lt;/li&gt;
   &lt;li&gt;To run and refresh your build locally, run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve --watch&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;/ol&gt;
 </description>
         <pubDate>Thu, 08 Dec 2016 00:00:00 -0600</pubDate>
-        <link>http://localhost:4000//life/2016/12/08/linux-epel.html</link>
-        <guid isPermaLink="true">http://localhost:4000//life/2016/12/08/linux-epel.html</guid>
+        <link>http://localhost:4000//life/2016/12/08/Blog-Setup.html</link>
+        <guid isPermaLink="true">http://localhost:4000//life/2016/12/08/Blog-Setup.html</guid>
         
         <category>FirstBlog</category>
         

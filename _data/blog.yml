@@ -1,14 +1,8 @@
 - name: Blog
   href: '/blog/'
 
-- name: Java
-  href: '/java/'
-
-- name: Linux
-  href: '/linux/'
-
-- name: Database
-  href: '/database/'
+- name: Code
+  href: '/code/'
 
 - name: Life
   href: '/life/'
