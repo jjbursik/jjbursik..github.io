@@ -5,8 +5,8 @@
     <description>Jeff's Blog and Site</description>
     <link>http://localhost:4000//</link>
     <atom:link href="http://localhost:4000//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 11 Dec 2016 21:00:11 -0600</pubDate>
-    <lastBuildDate>Sun, 11 Dec 2016 21:00:11 -0600</lastBuildDate>
+    <pubDate>Sun, 11 Dec 2016 21:17:21 -0600</pubDate>
+    <lastBuildDate>Sun, 11 Dec 2016 21:17:21 -0600</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
     
       <item>
@@ -17,8 +17,13 @@
   &lt;li&gt;I had never checked in code.  I now lead code reviews for my team, write a GitHub hosted blog, and teach others how to use GitHub.&lt;/li&gt;
   &lt;li&gt;I had never created a JAVA program.  I have written my platforms’ search service, all but 2 ingestion methods, a template-service, revised all of the code automation, and teach experienced team members my methods. Also have become fluent in the Spring architecture and the benefits it offers.&lt;/li&gt;
   &lt;li&gt;I had never written a unit test.  I learned Mockito, Junit, and the Spock framework.  I am fluent in Spock unit tests and write them on all code bases.  I have also recently learned how to write integration tests to become a test driven developer.&lt;/li&gt;
-  &lt;li&gt;I had never written a Groovy program.  I have now learned and rewrote my team’s Jenkins DSL in complete Groovy syntax which also required to learn the Jenkins DSL.&lt;/li&gt;
+  &lt;li&gt;I had never written a Groovy program.  I have now learned and rewrote my team’s Jenkins DSL in complete Groovy syntax which also required to learn the Jenkins DSL.  I also write all Spock unit tests and integration tests using Groovy.&lt;/li&gt;
   &lt;li&gt;I have never stood up an architecture.  I have now stood up, architected (based on pervious design), and iterated on by incorporating my own architecture which is driving the future of my team’s product.&lt;/li&gt;
+  &lt;li&gt;I have never used Elasticsearch, Logstash, or Kibana.  I have learned to use Elasticsearch’s REST APIs, Elasticsearch’s JAVA API, written several Logstash filters, and turned the Logstash data into decision driving/critical product Kibana dashboards for my team.  I am viewed as a key Elasticsearch team member on my team and have created an internal HipChat Elasticsearch room which I actively contribute too.&lt;/li&gt;
+  &lt;li&gt;I have used Jenkins to automate jobs before however I have never used Jenkin’s DSL language before.  I have created our team’s Jenkins platform in 2 days compared to 2 other dedicated DevOps team members that took 2+ weeks.  This also included an automated Logstash job log parser.&lt;/li&gt;
+  &lt;li&gt;I spent 9 months as a MicroStrategy Architect.  I have since taught my company’s MicroStrategy Architects about the MicroStrategy JAVA APIs and contributed to MicroStrategy open forum conversations pertaining to the JAVA APIs.&lt;/li&gt;
+  &lt;li&gt;I have led technical review conversations pertaining to all aspects of the code base for my project.&lt;/li&gt;
+  &lt;li&gt;I have written 2 products for my company on my free time in an effort to learn new technology.  One was called Answer-Bot, a natural language instant answer Business Intelligence tool.  The other, an abbreviation-service used to generate natural language from standard abbreviations.&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;h3 id=&quot;new-development&quot;&gt;New Development&lt;/h3&gt;
@@ -31,11 +36,11 @@
 &lt;/ol&gt;
 
 &lt;h3 id=&quot;where-i-want-to-go-in-2017&quot;&gt;Where I want to go in 2017&lt;/h3&gt;
-
 &lt;ol&gt;
   &lt;li&gt;I want to be a Software Architect, driving the direction of the team while still delivering on a life changing product.&lt;/li&gt;
   &lt;li&gt;I want to contribute to open source projects and deliver an open source product of my own.&lt;/li&gt;
   &lt;li&gt;I want to earn the respect of my peers through the code I write and how I motivate them to be better at what they do.&lt;/li&gt;
+  &lt;li&gt;I want to teach others what I did to be successful and how I did it.&lt;/li&gt;
 &lt;/ol&gt;
 </description>
         <pubDate>Sun, 11 Dec 2016 00:00:00 -0600</pubDate>

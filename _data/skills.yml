@@ -4,11 +4,23 @@
 - name: Java
   percentage: 40
 
+- name: Groovy
+  percentage: 25
+
+- name: MicroStrategy
+  percentage: 60
+
 - name: Javascript
   percentage: 30
 
 - name: Linux/Shell
   percentage: 40
+
+- name: Jenkins
+  percentage: 65
+
+- name: Docker
+  percentage: 25
 
 - name: Data Management
   percentage: 75
