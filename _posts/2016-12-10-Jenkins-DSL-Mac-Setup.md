@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Jenkins Coded and Tested"
-date:   2016-12-8
+date:   2016-12-10
 desc: "How to start up Jenkins locally on the Mac and test some Groovy DSL"
 keywords: "blog,jenkins,groovy,dsl"
 categories: [Code]

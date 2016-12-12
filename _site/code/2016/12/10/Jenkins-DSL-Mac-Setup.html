@@ -7,12 +7,16 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
+    <meta content="How to start up Jenkins locally on the Mac and test some Groovy DSL" name="description">
+  
+  
+    <meta name="keywords" content="blog,jenkins,groovy,dsl">
   
   <meta name="author" content="">
 
   <title>
     
-        Jeff Bursik|Blog
+        Jeff Bursik|Jenkins Coded and Tested
     
   </title>
   <!-- favicon -->
@@ -136,7 +140,7 @@
                         <li><a class="page-scroll" href="/blog/"></a></li>
                         
                             
-                            <li class="active">
+                            <li>
                             
                             <a class="page-scroll" href="/blog/">Blog</a></li>
                         
@@ -174,101 +178,127 @@
 
 	
 
-        <div class="row">
-    <div class="col-lg-12 text-center">
-        <div class="navy-line"></div>
-        <h1>Latest Blog</h1>
-    </div>
-</div>
-
-<div class="row">
-    <div class="col-lg-8 col-lg-offset-2">
-        <div class="wrapper wrapper-content animated fadeInRight">
-
-            <!-- latest 10 blog -->
-			
-            <div class="vote-item">
-                <div class="row">
-                    <div class="col-md-10">
-                        <div class="vote-actions">
-                        </div>
-                        <a href="/life/2016/12/11/My-2016-Accomplishments.html" class="vote-title">
-                            My 2016 Accomplishments: What did I work on, What did I learn, and What did I accomplish?
-                        </a>
-                        <div class="vote-info">
+    <div class="wrapper wrapper-content  animated fadeInRight article">
+    <div class="row">
+        <div class="col-lg-10 col-lg-offset-1">
+            <div class="ibox">
+                <div class="ibox-content">
+                    <div class="pull-right">
+                    	
+                        	<button class="btn btn-white btn-xs" type="button">Code</button>
                         
-                        
-                            <i class="fa fa-comments-o"> </i> <a>Comments (<span class='disqus-comment-count' data-disqus-url="http://localhost:4000/life/2016/12/11/My-2016-Accomplishments.html">0</span>)</a>
-                        
-                            <i class="fa fa-clock-o"></i> <a>11 Dec 2016</a>
-                            <i class="fa fa-user"></i> <a></a>
-                        </div>
                     </div>
-                    <div class="col-md-2 ">
-                        <div class="vote-icon">
-                            <i class="fa icon-centos"> </i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="vote-item">
-                <div class="row">
-                    <div class="col-md-10">
-                        <div class="vote-actions">
-                        </div>
-                        <a href="/code/2016/12/10/Jenkins-DSL-Mac-Setup.html" class="vote-title">
+                    <div class="text-center article-title">
+                    <span class="text-muted"><i class="fa fa-clock-o"></i> 10 Dec 2016</span>
+                        <h1>
                             Jenkins Coded and Tested
-                        </a>
-                        <div class="vote-info">
-                        
-                        
-                            <i class="fa fa-comments-o"> </i> <a>Comments (<span class='disqus-comment-count' data-disqus-url="http://localhost:4000/code/2016/12/10/Jenkins-DSL-Mac-Setup.html">0</span>)</a>
-                        
-                            <i class="fa fa-clock-o"></i> <a>10 Dec 2016</a>
-                            <i class="fa fa-user"></i> <a></a>
-                        </div>
+                        </h1>
                     </div>
-                    <div class="col-md-2 ">
-                        <div class="vote-icon">
-                            <i class="fa icon-centos"> </i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="vote-item">
-                <div class="row">
-                    <div class="col-md-10">
-                        <div class="vote-actions">
-                        </div>
-                        <a href="/life/2016/12/08/Blog-Setup.html" class="vote-title">
-                            How I started...
-                        </a>
-                        <div class="vote-info">
-                        
-                        
-                            <i class="fa fa-comments-o"> </i> <a>Comments (<span class='disqus-comment-count' data-disqus-url="http://localhost:4000/life/2016/12/08/Blog-Setup.html">0</span>)</a>
-                        
-                            <i class="fa fa-clock-o"></i> <a>8 Dec 2016</a>
-                            <i class="fa fa-user"></i> <a></a>
-                        </div>
-                    </div>
-                    <div class="col-md-2 ">
-                        <div class="vote-icon">
-                            <i class="fa icon-centos"> </i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
+                    	<p>Jenkins, while great, has its limitations if you don’t build it correctly.  Several teams, products, etc. use Jenkins for a CI/CD tool and set up jobs through the Web Interface however then there is extra work to back up the jobs, save it somewhere, etc.  And, how do they ensure a job is set and not later changed over the course of time?  Well, it’s simple… you use the Jenkins DSL.</p>
 
+<p>Jenkins DSL is domain specific language and is basically a coded Jenkins job interface.  You still install Jenkins as usual however all jobs are saved into a code repository, pretty awesome huh?  My team introduced this to me and it’s pretty slick.  However the problem for me, I like to test and develop locally which means I need a Jenkins instance running on the Mac that then reads from my Git Repository and builds all my necessary jobs.</p>
+
+<p>Alright, here is how it’s done, on a Mac:</p>
+
+<p>Keep in mind, this worked for me however there were some struggles along the way.</p>
+
+<ol>
+  <li>Download Jenkins: https://jenkins.io/content/thank-you-downloading-os-x-installer/</li>
+  <li>Jenkins will download under a new username ‘Jenkins’ (this took me a little while to figure out)</li>
+  <li>Log into the new Jenkins user <code class="highlighter-rouge">sudo su Jenkins</code></li>
+  <li>Generate an ssh key: <code class="highlighter-rouge">sudo ssh-keygen</code></li>
+  <li>Save the ssh key into the GitHub repository</li>
+  <li>Jenkins should be running after the install at loclhost:8080, open and log in.</li>
+  <li>Download all the GitHub plugins you would like to use (for this purpose and at this time I used Git Plugin)</li>
+  <li>Set up a Global User Credential with the Id that you just created the SSH key for.</li>
+  <li>Create a job and point the SCM to you github account.</li>
+  <li>You should have some fun cloning now!</li>
+</ol>
+
+<p>Now to the DSL.. to be continued…</p>
+
+<p>Tips:</p>
+
+<ol>
+  <li>To stop Jenkins <code class="highlighter-rouge">sudo launchctl unload /Library/LaunchDaemons/org.jenkins-ci.plist</code></li>
+  <li>To start Jenkins <code class="highlighter-rouge">sudo launchctl load /Library/LaunchDaemons/org.jenkins-ci.plist</code></li>
+</ol>
+
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-6">
+                                <h5 style="display: inline;">Tags:</h5>
+                                
+                                    <button class="btn btn-white btn-xs" type="button">FirstBlog</button>
+                                
+                                    <button class="btn btn-white btn-xs" type="button">HowToBlog</button>
+                                
+                                    <button class="btn btn-white btn-xs" type="button">jekyll</button>
+                                
+                        </div>
+                        <!-- <div class="col-md-6">
+                            <div class="small text-right">
+                                <h5>Stats:</h5>
+                                <div>
+                                
+                                
+                                <i class="fa fa-comments-o"> </i> <span class='disqus-comment-count' data-disqus-url="http://localhost:4000/code/2016/12/10/Jenkins-DSL-Mac-Setup.html">0</span> comments
+                                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <! donate -->
+                            <!-- 
+                            <br>
+                            <!- share -->
+                            <!-- 
+                                <h2>Share:</h2>
+
+<div class="bshare-custom">
+	<a title="分享到微信" class="bshare-weixin"></a>
+	<a title="分享到QQ空间" class="bshare-qzone"></a>
+	<a title="分享到新浪微博" class="bshare-sinaminiblog"></a>
+	<a title="更多平台" class="bshare-more bshare-more-icon more-style-addthis"></a>
+</div>
+<script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/buttonLite.js#style=-1&amp;uuid=513f778e-a8f7-4c20-9ec2-d29cc2328d75&amp;pophcol=1&amp;lang=zh"></script>
+<script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/bshareC0.js"></script>
+                            
+                            <br>
+                            <! comment -->
+                            <!-- 
+
+
+<div id="disqus_thread"></div>
+<script>
+/** * RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS. * LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables */
+	/*
+	var disqus_config = function () { this.page.url = PAGE_URL;
+	// Replace PAGE_URL with your page's canonical URL variable this.page.identifier = PAGE_IDENTIFIER;
+	// Replace PAGE_IDENTIFIER with your page's unique identifier variable };
+	*/
+	(function() { // DON'T EDIT BELOW THIS LINE
+			var d = document, s = d.createElement('script');
+			s.src = '//jalpc.disqus.com/embed.js';
+			s.setAttribute('data-timestamp', +new Date());
+			(d.head || d.body).appendChild(s);
+		})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+ > -->
+                        <!-- </div>
+                    </div>  -->
+
+                </div>
+            </div>
         </div>
     </div>
 
 </div>
-
-
 
 
 	

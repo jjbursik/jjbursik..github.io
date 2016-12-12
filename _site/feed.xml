@@ -5,9 +5,53 @@
     <description>Jeff's Blog and Site</description>
     <link>http://localhost:4000//</link>
     <atom:link href="http://localhost:4000//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 08 Dec 2016 18:44:18 -0600</pubDate>
-    <lastBuildDate>Thu, 08 Dec 2016 18:44:18 -0600</lastBuildDate>
+    <pubDate>Sun, 11 Dec 2016 21:00:11 -0600</pubDate>
+    <lastBuildDate>Sun, 11 Dec 2016 21:00:11 -0600</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
+    
+      <item>
+        <title>My 2016 Accomplishments: What did I work on, What did I learn, and What did I accomplish?</title>
+        <description>&lt;h3 id=&quot;new-skills&quot;&gt;New Skills&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;I had never written a line of code.  I now lead a team and hired 4 Java contractors, 3 of which could easily become employees, and am a key contributor to my teams’ code base.&lt;/li&gt;
+  &lt;li&gt;I had never checked in code.  I now lead code reviews for my team, write a GitHub hosted blog, and teach others how to use GitHub.&lt;/li&gt;
+  &lt;li&gt;I had never created a JAVA program.  I have written my platforms’ search service, all but 2 ingestion methods, a template-service, revised all of the code automation, and teach experienced team members my methods. Also have become fluent in the Spring architecture and the benefits it offers.&lt;/li&gt;
+  &lt;li&gt;I had never written a unit test.  I learned Mockito, Junit, and the Spock framework.  I am fluent in Spock unit tests and write them on all code bases.  I have also recently learned how to write integration tests to become a test driven developer.&lt;/li&gt;
+  &lt;li&gt;I had never written a Groovy program.  I have now learned and rewrote my team’s Jenkins DSL in complete Groovy syntax which also required to learn the Jenkins DSL.&lt;/li&gt;
+  &lt;li&gt;I have never stood up an architecture.  I have now stood up, architected (based on pervious design), and iterated on by incorporating my own architecture which is driving the future of my team’s product.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;new-development&quot;&gt;New Development&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;I had never led a team.  I was trained and led my team for 6 months as Scrum Master and was a fully dedicated Engineer.&lt;/li&gt;
+  &lt;li&gt;I am viewed as the Technical lead for my team’s project and have the respect of all team members.&lt;/li&gt;
+  &lt;li&gt;I have lead my team in innovation ideas and generated a positive, fun, and successful environment where people are motivated to deliver while learning.&lt;/li&gt;
+  &lt;li&gt;I have lead my personal development investing in new technology and finding lead edge tech to bring to my team.&lt;/li&gt;
+  &lt;li&gt;I have influenced non-technical peers to learn to code and motivate them to drive for results in other ways.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;where-i-want-to-go-in-2017&quot;&gt;Where I want to go in 2017&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;I want to be a Software Architect, driving the direction of the team while still delivering on a life changing product.&lt;/li&gt;
+  &lt;li&gt;I want to contribute to open source projects and deliver an open source product of my own.&lt;/li&gt;
+  &lt;li&gt;I want to earn the respect of my peers through the code I write and how I motivate them to be better at what they do.&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        <pubDate>Sun, 11 Dec 2016 00:00:00 -0600</pubDate>
+        <link>http://localhost:4000//life/2016/12/11/My-2016-Accomplishments.html</link>
+        <guid isPermaLink="true">http://localhost:4000//life/2016/12/11/My-2016-Accomplishments.html</guid>
+        
+        <category>Life</category>
+        
+        <category>Development</category>
+        
+        <category>Accomplishments</category>
+        
+        
+        <category>Life</category>
+        
+      </item>
     
       <item>
         <title>Jenkins Coded and Tested</title>
@@ -21,9 +65,18 @@
 
 &lt;ol&gt;
   &lt;li&gt;Download Jenkins: https://jenkins.io/content/thank-you-downloading-os-x-installer/&lt;/li&gt;
-  &lt;li&gt;Jenkins will download under a new username ‘Jenkins’ (this took me a little while to figure out)
-3.&lt;/li&gt;
+  &lt;li&gt;Jenkins will download under a new username ‘Jenkins’ (this took me a little while to figure out)&lt;/li&gt;
+  &lt;li&gt;Log into the new Jenkins user &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo su Jenkins&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Generate an ssh key: &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo ssh-keygen&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Save the ssh key into the GitHub repository&lt;/li&gt;
+  &lt;li&gt;Jenkins should be running after the install at loclhost:8080, open and log in.&lt;/li&gt;
+  &lt;li&gt;Download all the GitHub plugins you would like to use (for this purpose and at this time I used Git Plugin)&lt;/li&gt;
+  &lt;li&gt;Set up a Global User Credential with the Id that you just created the SSH key for.&lt;/li&gt;
+  &lt;li&gt;Create a job and point the SCM to you github account.&lt;/li&gt;
+  &lt;li&gt;You should have some fun cloning now!&lt;/li&gt;
 &lt;/ol&gt;
+
+&lt;p&gt;Now to the DSL.. to be continued…&lt;/p&gt;
 
 &lt;p&gt;Tips:&lt;/p&gt;
 
@@ -32,9 +85,9 @@
   &lt;li&gt;To start Jenkins &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo launchctl load /Library/LaunchDaemons/org.jenkins-ci.plist&lt;/code&gt;&lt;/li&gt;
 &lt;/ol&gt;
 </description>
-        <pubDate>Thu, 08 Dec 2016 00:00:00 -0600</pubDate>
-        <link>http://localhost:4000//code/2016/12/08/Jenkins-DSL-Mac-Setup.html</link>
-        <guid isPermaLink="true">http://localhost:4000//code/2016/12/08/Jenkins-DSL-Mac-Setup.html</guid>
+        <pubDate>Sat, 10 Dec 2016 00:00:00 -0600</pubDate>
+        <link>http://localhost:4000//code/2016/12/10/Jenkins-DSL-Mac-Setup.html</link>
+        <guid isPermaLink="true">http://localhost:4000//code/2016/12/10/Jenkins-DSL-Mac-Setup.html</guid>
         
         <category>FirstBlog</category>
         
