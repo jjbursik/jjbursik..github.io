@@ -34,3 +34,8 @@ icon: icon-centos
 2. I want to contribute to open source projects and deliver an open source product of my own.
 3. I want to earn the respect of my peers through the code I write and how I motivate them to be better at what they do.
 4. I want to teach others what I did to be successful and how I did it.
+
+### 2017 Goals:
+1. Search Ranking algorithm
+2. Platform security
+3. Platform automation/infrastructure
