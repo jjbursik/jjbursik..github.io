@@ -14,9 +14,10 @@ icon: icon-centos
 2. I had never checked in code.  I now lead code reviews for my team, write a GitHub hosted blog, and teach others how to use GitHub.
 3. I had never created a JAVA program.  I have written my platforms' search service, all but 2 ingestion methods, a template-service, revised all of the code automation, and teach experienced team members my methods. Also have become fluent in the Spring architecture and the benefits it offers.
 4. I had never written a unit test.  I learned Mockito, Junit, and the Spock framework.  I am fluent in Spock unit tests and write them on all code bases.  I have also recently learned how to write integration tests to become a test driven developer.
-5. I had never written a Groovy program.  I have now learned and rewrote my team's Jenkins DSL in complete Groovy syntax which also required to learn the Jenkins DSL.
+5. I had never written a Groovy program.  I have now learned and rewrote my team's Jenkins DSL in complete Groovy syntax which also required to learn the Jenkins DSL.  I also write all Spock unit tests and integration tests using Groovy.
 6. I have never stood up an architecture.  I have now stood up, architected (based on pervious design), and iterated on by incorporating my own architecture which is driving the future of my team's product.
-
+7. I have never used Elasticsearch, Logstash, or Kibana.  I have learned to use Elasticsearch's REST APIs, Elasticsearch's JAVA API, written several Logstash filters, and turned the Logstash data into decision driving/critical product Kibana dashboards for my team.  I am viewed as a key Elasticsearch team member on my team and have created an internal HipChat Elasticsearch room which I actively contribute too.
+8. I have used Jenkins to automate jobs before however I have never used Jenkin's DSL language before.  I have created our team's Jenkins platform in 2 days compared to 2 other dedicated DevOps team members that took 2+ weeks.  This also included an automated Logstash job log parser.
 
 ### New Development
 1. I had never led a team.  I was trained and led my team for 6 months as Scrum Master and was a fully dedicated Engineer.
