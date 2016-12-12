@@ -18,6 +18,9 @@ icon: icon-centos
 6. I have never stood up an architecture.  I have now stood up, architected (based on pervious design), and iterated on by incorporating my own architecture which is driving the future of my team's product.
 7. I have never used Elasticsearch, Logstash, or Kibana.  I have learned to use Elasticsearch's REST APIs, Elasticsearch's JAVA API, written several Logstash filters, and turned the Logstash data into decision driving/critical product Kibana dashboards for my team.  I am viewed as a key Elasticsearch team member on my team and have created an internal HipChat Elasticsearch room which I actively contribute too.
 8. I have used Jenkins to automate jobs before however I have never used Jenkin's DSL language before.  I have created our team's Jenkins platform in 2 days compared to 2 other dedicated DevOps team members that took 2+ weeks.  This also included an automated Logstash job log parser.
+9. I spent 9 months as a MicroStrategy Architect.  I have since taught my company's MicroStrategy Architects about the MicroStrategy JAVA APIs and contributed to MicroStrategy open forum conversations pertaining to the JAVA APIs.
+10. I have led technical review conversations pertaining to all aspects of the code base for my project.
+11. I have written 2 products for my company on my free time in an effort to learn new technology.  One was called Answer-Bot, a natural language instant answer Business Intelligence tool.  The other, an abbreviation-service used to generate natural language from standard abbreviations.
 
 ### New Development
 1. I had never led a team.  I was trained and led my team for 6 months as Scrum Master and was a fully dedicated Engineer.
@@ -27,7 +30,7 @@ icon: icon-centos
 5. I have influenced non-technical peers to learn to code and motivate them to drive for results in other ways.
 
 ### Where I want to go in 2017
-
 1. I want to be a Software Architect, driving the direction of the team while still delivering on a life changing product.
 2. I want to contribute to open source projects and deliver an open source product of my own.
 3. I want to earn the respect of my peers through the code I write and how I motivate them to be better at what they do.
+4. I want to teach others what I did to be successful and how I did it.
