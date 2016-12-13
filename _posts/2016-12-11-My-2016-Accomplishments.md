@@ -24,7 +24,7 @@ icon: icon-centos
 
 ### New Development
 1. I had never led a team.  I was trained and led my team for 6 months as Scrum Master and was a fully dedicated Engineer.
-2. I am viewed as the Technical lead for my team's project and have the respect of all team members.
+2. I am acknowledged as the Technical lead for my team's project and have the respect of all team members.
 3. I have lead my team in innovation ideas and generated a positive, fun, and successful environment where people are motivated to deliver while learning.
 4. I have lead my personal development investing in new technology and finding lead edge tech to bring to my team.
 5. I have influenced non-technical peers to learn to code and motivate them to drive for results in other ways.
