@@ -15,6 +15,7 @@ Target has the concept of Career Competencies which help determine when someone 
 
 
 ### My Career Goals
+
 | Competency        | Self Evaluation   | Goal Level              |  Development Goal                 | Completed By |
 |:------------------|:----------------|:------------------------|:------------------------------------|----------|
 | Technical Agility    | 6          | 6.5                         |Demonstrates expertise about how software is designed, built, deployed, and maintained in an enterprise environment. | August 2017 |
